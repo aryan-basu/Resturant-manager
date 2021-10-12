@@ -10,6 +10,7 @@ const Test =(props) =>{
     const [books, setBooks] = useState(null);
     const [searchTerm,setsearchTerm]=useState("");
     const fullnameRef=useRef(null);
+    const gstnumberRef=useRef(null);
     const phonenumberRef=useRef(null);
     const seatnumberRef=useRef(null);
     const [payment,Setpayment]=useState("Cash");
@@ -200,6 +201,12 @@ return (
               <div className="form-group">
                 <label htmlFor="phone">Seat Number</label>
                 <input type="number" className="form-control"  placeholder="Seat Number"ref={seatnumberRef} />
+              </div>
+            </div>
+            <div className="col-md-6">
+              <div className="form-group">
+                <label htmlFor="phone">GST percent</label>
+                <input type="number" className="form-control"  placeholder="GST percent"ref={gstnumberRef} />
               </div>
             </div>
             {/*  col-md-6   */}
